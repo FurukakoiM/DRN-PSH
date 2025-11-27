@@ -2,7 +2,7 @@
 
 Source code and data for the paper:
 
-> Masahiro Furukakoia, Akito Nakadomari, Akie Uehara, Narayanan Krishnand, Paras Mandal and Tomonobu Senjyu (20**). **Distributed Reservoir Network Pumped Storage Hydropower Using Dam-Pond Clusters: Optimal Site Selection and Operation for Enhanced Renewable Energy Integration.** *Submitted to Renewable Energy.*
+> Masahiro Furukakoi, Akito Nakadomari, Akie Uehara, Narayanan Krishnan, Paras Mandal and Tomonobu Senjyu (20**). **Distributed Reservoir Network Pumped Storage Hydropower Using Dam-Pond Clusters: Optimal Site Selection and Operation for Enhanced Renewable Energy Integration.** *Submitted to Renewable Energy.*
 
 **Note**: This paper is currently under review.
 
