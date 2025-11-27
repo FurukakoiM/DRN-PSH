@@ -2,7 +2,9 @@
 
 Source code and data for the paper:
 
-> Furukakoi, M., Nakadomari, A., Uehara, A., Krishnan, N., Mandal, P., & Senjyu, T. (2025). **Distributed Reservoir Network Pumped Storage Hydropower Using Dam-Pond Clusters: Optimal Site Selection and Operation for Enhanced Renewable Energy Integration.** *Renewable Energy.*
+> Furukakoi, M., Nakadomari, A., Uehara, A., Krishnan, N., Mandal, P., & Senjyu, T. (2025). **Distributed Reservoir Network Pumped Storage Hydropower Using Dam-Pond Clusters: Optimal Site Selection and Operation for Enhanced Renewable Energy Integration.** *Submitted to Renewable Energy.*
+
+**Note**: This paper is currently under review.
 
 ## Overview
 
@@ -74,34 +76,13 @@ run('src/visualization/PlotResults.m')
 | Dam locations | National Land Information | [MLIT](https://nlftp.mlit.go.jp/) |
 | Pond locations | Agricultural reservoir data | [MAFF](https://www.maff.go.jp/) |
 
-## Key Parameters
-
-| Parameter | Value |
-|-----------|-------|
-| Dam-Dam threshold | 1.5 km |
-| Dam-Pond threshold | 1.0 km |
-| Generation efficiency | 0.85 |
-| Pumping efficiency | 0.75 |
-| Transmission capacity | 250 kW |
-
 ## Citation
 
-```bibtex
-@article{furukakoi2025drnpsh,
-  title={Distributed Reservoir Network Pumped Storage Hydropower Using 
-         Dam-Pond Clusters: Optimal Site Selection and Operation for 
-         Enhanced Renewable Energy Integration},
-  author={Furukakoi, Masahiro and Nakadomari, Akito and Uehara, Akie 
-          and Krishnan, Narayanan and Mandal, Paras and Senjyu, Tomonobu},
-  journal={Renewable Energy},
-  year={2025},
-  doi={10.1016/j.renene.2025.XXXXX}
-}
-```
+**Note**: Citation information will be updated upon publication.
 
 ## License
 
-MIT License
+This project is licensed under the MIT License - see the [LICENSE.txt](LICENSE.txt) file for details.
 
 ## Contact
 
