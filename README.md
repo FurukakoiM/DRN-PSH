@@ -24,8 +24,8 @@ This repository contains MATLAB code for:
 ```
 DRN-PSH/
 ├── src/
-│   ├── OptPlace.m              # GIS-based site selection (generates Fig.5-6 & Table 3)
-│   ├── MILP_Optimization.m     # MILP optimization model (generates Fig.4,7-9 & Table 5)
+│   ├── OptPlace.m              # GIS-based site selection (generates Fig.5-6 & Tab.3)
+│   ├── MILP_Optimization.m     # MILP optimization model (generates Fig.4,7-9 & Tab.5)
 │   ├── DataAll.mat             # Input data (PV, price, water inflow)
 │   ├── yamaguchi_pond.xlsx     # Pond database
 │   ├── yamaguchi_dam.xlsx      # Dam database
