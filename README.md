@@ -26,7 +26,7 @@ DRN-PSH/
 ├── src/
 │   ├── OptPlace.m              # GIS-based site selection (generates Fig.5-6 & Tab.3)
 │   ├── MILP_Optimization.m     # MILP optimization model (generates Fig.4,7-9 & Tab.5)
-│   ├── DataAll.mat             # Input data (PV, price, water inflow)
+│   ├── DataAll.mat             # Input data (Price, PV, Water inflow)
 │   ├── yamaguchi_pond.xlsx     # Pond database
 │   ├── yamaguchi_dam.xlsx      # Dam database
 │   └── N03-20240101_35.shp     # Yamaguchi Prefecture boundary (optional)
@@ -62,11 +62,11 @@ run('src/MILP_Optimization.m')
 
 | File | Description | Source |
 |------|-------------|--------|
-| Electricity price | JEPX spot market | Ref.[[21]](https://www.jepx.jp/electricpower/market-data/spot/)|
-| PV generation | Solar irradiance data | Ref.[[22]](https://appww2.infoc.nedo.go.jp/appww/metpv.html?p=81481)|
-| Water inflow | Dam inflow data | Ref.[[23]](https://www.enecho.meti.go.jp/category/saving_and_new/saiene/ryuryodatabase/search_water_dam_data/?ID=35224900011001) |
-| Dam locations | National Land Information | Ref.[[18]](https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-W01.html) |
-| Pond locations | Agricultural reservoir data | Ref.[[19]](https://www.maff.go.jp/j/nousin/bousai/bousai_saigai/b_tameike/ichiran.html) |
+| DataAll.mat (Price data) | JEPX spot market | Ref.[[21]](https://www.jepx.jp/electricpower/market-data/spot/)|
+| DataAll.mat (PV data) | Solar irradiance data | Ref.[[22]](https://appww2.infoc.nedo.go.jp/appww/metpv.html?p=81481)|
+| DataAll.mat (Water inflow data) | Dam inflow data | Ref.[[23]](https://www.enecho.meti.go.jp/category/saving_and_new/saiene/ryuryodatabase/search_water_dam_data/?ID=35224900011001) |
+| yamaguchi_dam.xlsx (Dam data) | National Land Information | Ref.[[18]](https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-W01.html) |
+| yamaguchi_pond.xlsx (Pond data) | Agricultural reservoir data | Ref.[[19]](https://www.maff.go.jp/j/nousin/bousai/bousai_saigai/b_tameike/ichiran.html) |
 
 ## Citation
 
