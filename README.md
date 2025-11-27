@@ -36,6 +36,7 @@ This repository contains MATLAB code for:
 │   └── results/
 │       └── OptPlace.mat            # Site selection results
 └── README.md
+└── LICENSE.txt
 ```
 
 ## Usage
