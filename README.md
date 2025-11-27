@@ -22,20 +22,15 @@ This repository contains MATLAB code for:
 ## Repository Structure
 
 ```
+DRN-PSH/
 ├── src/
-│   ├── site_selection/
-│   │   └── OptPlace.m              # GIS-based site selection (Fig.5)
-│   ├── optimization/
-│   │   └── MILP_Optimization.m     # MILP model (Fig.7-9)
-│   └── visualization/
-│       └── PlotResults.m           # Result visualization
-├── data/
-│   ├── input/
-│   │   ├── CalData.mat             # Input data (price, PV, flow)
-│   │   └── shapefiles/             # GIS data (.shp files)
-│   └── results/
-│       └── OptPlace.mat            # Site selection results
-└── README.md
+│   ├── OptPlace.m              # GIS-based site selection (generates Fig.5-6 & Table 3)
+│   ├── MILP_Optimization.m     # MILP optimization model (generates Fig.4,7-9 & Table 5)
+│   ├── DataAll.mat             # Input data (PV, price, water inflow)
+│   ├── yamaguchi_pond.xlsx     # Pond database
+│   ├── yamaguchi_dam.xlsx      # Dam database
+│   └── N03-20240101_35.shp     # Yamaguchi Prefecture boundary (optional)
+├── README.md
 └── LICENSE.txt
 ```
 
@@ -45,7 +40,7 @@ This repository contains MATLAB code for:
 
 ```matlab
 % Run GIS-based site selection algorithm
-run('src/site_selection/OptPlace.m')
+run('src/OptPlace.m')
 ```
 
 ### 2. Operation Optimization
@@ -53,19 +48,15 @@ run('src/site_selection/OptPlace.m')
 ```matlab
 % Run MILP optimization
 % Set CasePara to select system configuration:
+% CasePara=[1;1;1];
+%   [0;0;0] - w/o PSH
 %   [1;0;0] - S-PSH (Single-stage)
 %   [1;1;0] - C-PSH (Cascade)
 %   [1;1;1] - DRN-PSH (Distributed Reservoir Network)
 
-run('src/optimization/MILP_Optimization.m')
+run('src/MILP_Optimization.m')
 ```
 
-### 3. Reproduce Figures
-
-```matlab
-% Generate paper figures
-run('src/visualization/PlotResults.m')
-```
 
 ## Input Data
 
@@ -74,8 +65,8 @@ run('src/visualization/PlotResults.m')
 | Electricity price | JEPX spot market (2018) | [JEPX](https://www.jepx.jp/) |
 | PV generation | Solar irradiance data | [NEDO](https://www.nedo.go.jp/) |
 | Water inflow | Dam inflow data | [METI](https://www.enecho.meti.go.jp/) |
-| Dam locations | National Land Information | [MLIT](https://nlftp.mlit.go.jp/) |
-| Pond locations | Agricultural reservoir data | [MAFF](https://www.maff.go.jp/) |
+| Dam locations | National Land Information | Ref.[18](https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-W01.html) |
+| Pond locations | Agricultural reservoir data | Ref.[19](https://www.maff.go.jp/j/nousin/bousai/bousai_saigai/b_tameike/ichiran.html) |
 
 ## Citation
 
