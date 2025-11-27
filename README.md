@@ -62,7 +62,7 @@ run('src/MILP_Optimization.m')
 
 | File | Description | Source |
 |------|-------------|--------|
-| Electricity price | JEPX spot market (2018) | Ref.[[21]](https://www.jepx.jp/electricpower/market-data/spot/)|
+| Electricity price | JEPX spot market | Ref.[[21]](https://www.jepx.jp/electricpower/market-data/spot/)|
 | PV generation | Solar irradiance data | Ref.[[22]](https://appww2.infoc.nedo.go.jp/appww/metpv.html?p=81481)|
 | Water inflow | Dam inflow data | Ref.[[23]](https://www.enecho.meti.go.jp/category/saving_and_new/saiene/ryuryodatabase/search_water_dam_data/?ID=35224900011001) |
 | Dam locations | National Land Information | Ref.[[18]](https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-W01.html) |
